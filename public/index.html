@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FoodFinder AI - asisten rekomendasi makanan berbasis Gemini AI" />
+  <title>FoodFinder AI 🍴</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="chat-container">
+    <header class="chat-header">
+      <div class="brand-icon">🍴</div>
+      <div>
+        <h1>FoodFinder AI</h1>
+        <p>Temukan makanan yang cocok untukmu ✨</p>
+      </div>
+      <span class="status-dot" title="FoodFinder AI aktif"></span>
+    </header>
+
+    <section class="suggestions" aria-label="Contoh pertanyaan">
+      <button type="button" class="suggestion">Budget Rp30 ribu, mau makanan pedas 🌶️</button>
+      <button type="button" class="suggestion">Aku bingung mau makan apa 😋</button>
+      <button type="button" class="suggestion">Rekomendasi makanan ringan dong</button>
+    </section>
+
+    <section id="chat-box" class="chat-box" aria-live="polite">
+      <div class="message bot">
+        <span class="message-label">FoodFinder AI</span>
+        <span>Hai! 👋 Aku FoodFinder AI. Aku bisa bantu mencari ide makanan berdasarkan budget, selera, dan mood kamu. Lagi pengen makan apa hari ini?</span>
+      </div>
+    </section>
+
+    <form id="chat-form" class="chat-form">
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Contoh: Aku punya Rp25.000 dan mau makanan pedas..."
+        autocomplete="off"
+        maxlength="500"
+        required
+      />
+      <button type="submit" aria-label="Kirim pesan">➤</button>
+    </form>
+
+    <p class="footer-note">Powered by Gemini AI • FoodFinder AI</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
